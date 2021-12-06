@@ -1,0 +1,158 @@
+@font-face {
+    font-family: Outfit-light;
+    src: url("./fonts/Outfit-Light.ttf")
+}
+
+@font-face {
+    font-family: Outfit-regular;
+    src: url("./fonts/Outfit-Regular.ttf")
+}
+
+@font-face {
+    font-family: Outfit-semibold;
+    src: url("./fonts/Outfit-SemiBold.ttf")
+}
+
+
+body{
+    font-family: Outfit-regular;
+    font-size: 18px;
+    margin: 0;
+    background-color: hsl(217, 54%, 11%);
+    color: white
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: .5s ease;
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover, a:active{
+    color:hsl(178, 100%, 50%);
+}
+
+.card{
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 5vw;
+    padding: 25px;
+    max-width: 332px;
+}
+
+.img-card{
+    position: relative;
+    width: 100%;
+}
+
+.img-card .img{
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.eyes{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+    background-color: hsl(178, 100%, 50%, 0);
+    border-radius: 20px;
+    
+}
+
+.eyes .icon-eyes{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: .5s ease;
+    opacity: 0;
+}
+
+.img-card:hover .eyes{
+    background-color: hsl(178, 100%, 50%, 0.5);
+}
+
+.img-card:hover .eyes img{
+    opacity: 1;
+}
+
+h2{
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+p{
+    font-family: Outfit-light;
+    color: hsl(215, 51%, 70%);
+    line-height: 32px;
+    margin-top: 0;
+}
+
+.info, #price, #time{
+    display: flex;
+    align-items: center;
+}
+
+.info{
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+
+#price{
+    color: hsl(178, 100%, 50%)
+}
+
+#time{
+    color: hsl(215, 51%, 70%);
+}
+
+.info img{
+    margin-right: 10px
+}
+
+.created-by{
+    display: flex;
+    align-items: center;
+    border-top : 1px solid hsl(215, 32%, 27%);
+    color: hsl(215, 51%, 70%);
+    padding-top: 16px
+}
+
+.created-by div{
+    margin-left: 18px;
+}
+
+.created-by img{
+    width: 10%;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+.created-by span{
+    color: white
+}
+
+.attribution{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.attribution a{
+    text-decoration: underline;
+}
+
+
